@@ -1,0 +1,15 @@
+<h1>hello
+    <%= username %>
+</h1>
+<form action="/:username/add-product" method="POST">
+    <div>
+        <label for="product_url">Product Url</label>
+        <input type="text" id="producturl" name="producturl">
+    </div>
+    <button type="submit" formaction="/add-product">add product</button>
+    <button type="submit" formaction="/unfollow?_method=PATCH">unfollow</button>
+</form>
+
+<form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">logout</button>
+</form>
